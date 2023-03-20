@@ -1,12 +1,22 @@
-import React from 'react';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 import bread from '../../../assets/images/bread.jpg'
 
-function Bread(props) {
+
+function CardBread() {
   return (
-    <div className='container Products'>
-      <img className='bread' src={bread}  />
-      <h2>{props.name}</h2>
-      <p>{props.price}</p>
-    </div>
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src={bread} className="card-image"/>
+      <Card.Body>
+        <Card.Title>Pan</Card.Title>
+        <Card.Text>
+        Diferentes tipos de pan
+        </Card.Text>
+        <Button variant="primary">Aceder</Button>
+      </Card.Body>
+    </Card>
   );
 }
+
+export default CardBread;
+

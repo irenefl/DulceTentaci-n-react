@@ -1,12 +1,22 @@
-import React from 'react';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 import cookies from '../../../assets/images/cookies.jpg'
 
-function Cookies(props) {
+
+
+function CardCake() {
   return (
-    <div className='container Products'>
-      <img className='cookies' src={cookies}  />
-      <h2>{props.name}</h2>
-      <p>{props.price}</p>
-    </div>
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src={cookies} className="card-image" />
+      <Card.Body>
+        <Card.Title>Pastas</Card.Title>
+        <Card.Text>
+         Pastas y mantecados
+        </Card.Text>
+        <Button variant="primary">Acceder</Button>
+      </Card.Body>
+    </Card>
   );
 }
+
+export default CardCake;

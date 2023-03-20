@@ -1,43 +1,33 @@
 import React from 'react';
 import './App.css';
-import {BrowserRouter as Router,Route,Routes} from 'react-router-dom';
-import Cakes from './components/Cakes';
-import Cookies from './components/Cookies';
-import Bread from './components/Bread';
+import  'bootstrap/dist/css/bootstrap.min.css' ;
+import './components/atoms/card/card.css'
+// import {BrowserRouter as Router,Route,Routes} from 'react-router-dom';
+import Home from './pages/Home';
+import Cake from './pages/Cake';
+import Basket from './components/templates/Basket';
 
 
 
 function App() {
   return (
-    <Router>
-      
-      <h1>¿Qué te apetece hoy?</h1>
-      
-      <div className="products-container">
-        <Cakes 
-          name="Pastel de chocolate"
-          image="cake.jpg" 
-        />
-        <Cookies 
-          name="Pastas"
-          image="cookies.jpg" 
-        />
-        <Bread 
-          name="Pan"
-          image="bread.jpg" 
-        />
-      </div>
-      </Router>
+    // <Router>
+      <>
+     {/* <Home/> */}
+     {/* <Cake/> */}
+     <Basket/>
+      {/* </Router> */}
+      </>
   );
 }
 
 export default App;
 
-      <Header />
-      <Routes>
-      <Route path="/home" element={<Home/>}/>
-      <Route path="/cart" element={<Cart/>}/>
+    //   <Header />
+    //   <Routes>
+    //   <Route path="/home" element={<Home/>}/>
+    //   <Route path="/cart" element={<Cart/>}/>
       
-        </Routes>
-      <Footer />
-    </Router>
+    //     </Routes>
+    //   <Footer />
+    // </Router>

@@ -1,0 +1,16 @@
+  .products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .products-container > * {
+    margin: 10px;
+    flex-basis: 30%;
+    max-width: 30%;
+    flex-grow: 1;
+  }
+  .card-image {
+    height: 200px;
+  }
+  

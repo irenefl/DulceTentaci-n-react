@@ -1,15 +1,22 @@
-import React from 'react';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 import cake from '../../../assets/images/cake.jpg'
 
 
-function Cakes (props) {
+function CardCake() {
   return (
-    <div className='container Products'>
-      <img className='cake' src={cake}  />
-      <h2>{props.name}</h2>
-      <p>{props.price}</p>
-    </div>
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src={cake} className="card-image" />
+      <Card.Body>
+        <Card.Title>Tartas</Card.Title>
+        <Card.Text>
+         Distintos tipos de tartas
+        </Card.Text>
+        <Button variant="primary">Acceder</Button>
+      </Card.Body>
+    </Card>
   );
 }
 
-export default Cakes;
+export default CardCake;
+
